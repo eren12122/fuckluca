@@ -6,9 +6,9 @@ exports.run = (client, message, args) => {
   
     message.delete();
     const embed = new Discord.RichEmbed()
-    .setAuthor(message.author.username + `Steam ID`)
+    .setAuthor(message.author.username + `Adlı Kullanıcının İStediği Steam ID`)
     .setColor("#18BF7E")
-    .setDescription(`https://steamcommunity.com/id${mesaj}/`)
+    .setDescription(`https://steamcommunity.com/id/${mesaj}/`)
     .setThumbnail('')
     return message.channel.sendEmbed(embed);
 };
